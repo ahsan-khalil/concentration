@@ -1,48 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flip : 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-8H-SZ9">
-                                <rect key="frame" x="83" y="781" width="228" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEQ-wf-JaN">
+                                <rect key="frame" x="20" y="209" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pj3-nF-T2W"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-mu-0aG">
+                                <rect key="frame" x="64" y="64" width="286" height="70"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="k2s-Ry-bgx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJr-vD-vLS">
-                                <rect key="frame" x="35" y="70" width="128" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6P-YR-6rx">
+                                <rect key="frame" x="20" y="309" width="374" height="49"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                <state key="normal" title="Select Theme">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="CardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHp-V0-O9V"/>
+                                    <action selector="onClickSelectTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeX-xa-bBv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ7-WP-3Dg">
+                                <rect key="frame" x="20" y="713" width="374" height="49"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Upz-UK-kkW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cEQ-wf-JaN" secondAttribute="trailing" constant="20" id="JZm-IC-Ncq"/>
+                            <constraint firstItem="A6P-YR-6rx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JxE-Bx-NS0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WQ7-WP-3Dg" secondAttribute="bottom" constant="100" id="MiH-9A-wD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XOx-mu-0aG" secondAttribute="trailing" constant="64" id="NX2-LB-MIL"/>
+                            <constraint firstItem="XOx-mu-0aG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="QKM-BT-WSN"/>
+                            <constraint firstItem="A6P-YR-6rx" firstAttribute="top" secondItem="cEQ-wf-JaN" secondAttribute="bottom" constant="50" id="Txb-gU-Whf"/>
+                            <constraint firstItem="WQ7-WP-3Dg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aE7-cp-gRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6P-YR-6rx" secondAttribute="trailing" constant="20" id="cYk-aY-hZO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WQ7-WP-3Dg" secondAttribute="trailing" constant="20" id="pr6-BC-HA6"/>
+                            <constraint firstItem="cEQ-wf-JaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sTB-TI-LD7"/>
+                            <constraint firstItem="XOx-mu-0aG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yGT-X9-HaE"/>
+                            <constraint firstItem="cEQ-wf-JaN" firstAttribute="top" secondItem="XOx-mu-0aG" secondAttribute="bottom" constant="75" id="yU7-LH-wjY"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="FlipCountLabel" destination="sKi-8H-SZ9" id="vn2-zz-f2z"/>
+                        <outlet property="btnSelectTheme" destination="A6P-YR-6rx" id="mYl-sZ-02l"/>
+                        <outlet property="btnStartGame" destination="WQ7-WP-3Dg" id="LLU-Ja-6kZ"/>
+                        <outlet property="editTextUsername" destination="cEQ-wf-JaN" id="6P0-gE-tk8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
+        <!--Game View Controller-->
+        <scene sceneID="pN3-QP-ErF">
+            <objects>
+                <viewController storyboardIdentifier="gameViewController" id="jN0-ej-bHu" customClass="GameViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1a-3n-U5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip : 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-Oe-Aed">
+                                <rect key="frame" x="75" y="144" width="264" height="80"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9s7-hA-jqr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5V-MP-Ssd">
+                                <rect key="frame" x="35" y="335" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="zf7-5I-7NM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-Sp-f2O">
+                                <rect key="frame" x="125" y="335" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="0BV-EW-WTL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cl-ba-51d">
+                                <rect key="frame" x="214" y="335" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="sZp-Ax-ah3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-lC-dC6">
+                                <rect key="frame" x="304" y="335" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="7q4-Jo-8TT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL3-cM-MHA">
+                                <rect key="frame" x="36" y="408" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="x92-ij-IxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4h-0F-1l4">
+                                <rect key="frame" x="126" y="408" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="CEM-Tb-HRP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azI-In-pcP">
+                                <rect key="frame" x="215" y="408" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="voT-xM-LVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-oy-1xw">
+                                <rect key="frame" x="305" y="408" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="aLp-po-9u4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-s1-kMa">
+                                <rect key="frame" x="36" y="481" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="UnW-NL-Ilm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-VG-dL9">
+                                <rect key="frame" x="126" y="481" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="yKp-ka-1yn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-FW-MUe">
+                                <rect key="frame" x="215" y="481" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="nQw-b1-G5p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-O2-E0w">
+                                <rect key="frame" x="305" y="481" width="85" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <connections>
+                                    <action selector="onTileClick:" destination="jN0-ej-bHu" eventType="touchUpInside" id="7c6-za-VzV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgZ-JZ-O9w">
+                                <rect key="frame" x="75" y="722" width="264" height="75"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="39"/>
+                                <state key="normal" title="End Game">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickEndGame:" destination="jN0-ej-bHu" eventType="touchUpInside" id="Sdb-kH-SaW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QMz-ci-UxS"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="QMz-ci-UxS" firstAttribute="trailing" secondItem="xbF-Oe-Aed" secondAttribute="trailing" constant="75" id="2UN-Lr-bOi"/>
+                            <constraint firstItem="xbF-Oe-Aed" firstAttribute="top" secondItem="QMz-ci-UxS" secondAttribute="top" constant="100" id="Vrb-Bv-idg"/>
+                            <constraint firstItem="xbF-Oe-Aed" firstAttribute="leading" secondItem="QMz-ci-UxS" secondAttribute="leading" constant="75" id="YOz-1o-fQR"/>
+                            <constraint firstItem="QMz-ci-UxS" firstAttribute="trailing" secondItem="LgZ-JZ-O9w" secondAttribute="trailing" constant="75" id="aa2-f7-dIL"/>
+                            <constraint firstItem="QMz-ci-UxS" firstAttribute="bottom" secondItem="LgZ-JZ-O9w" secondAttribute="bottom" constant="65" id="tgG-W7-BJ6"/>
+                            <constraint firstItem="LgZ-JZ-O9w" firstAttribute="leading" secondItem="QMz-ci-UxS" secondAttribute="leading" constant="75" id="wUe-M8-oPW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEndGame" destination="LgZ-JZ-O9w" id="v22-hW-DEQ"/>
+                        <outlet property="lableFlipCount" destination="xbF-Oe-Aed" id="2xS-V9-C7D"/>
+                        <outletCollection property="Tiles" destination="d5V-MP-Ssd" collectionClass="NSMutableArray" id="cG8-Nb-tCO"/>
+                        <outletCollection property="Tiles" destination="Nkz-Sp-f2O" collectionClass="NSMutableArray" id="AXZ-Ru-IHs"/>
+                        <outletCollection property="Tiles" destination="0cl-ba-51d" collectionClass="NSMutableArray" id="QSJ-gW-SjX"/>
+                        <outletCollection property="Tiles" destination="6AQ-lC-dC6" collectionClass="NSMutableArray" id="UXv-KS-fbv"/>
+                        <outletCollection property="Tiles" destination="CL3-cM-MHA" collectionClass="NSMutableArray" id="n0m-Gm-nqz"/>
+                        <outletCollection property="Tiles" destination="n4h-0F-1l4" collectionClass="NSMutableArray" id="uu8-89-psq"/>
+                        <outletCollection property="Tiles" destination="azI-In-pcP" collectionClass="NSMutableArray" id="8K1-OT-1N2"/>
+                        <outletCollection property="Tiles" destination="OMD-oy-1xw" collectionClass="NSMutableArray" id="prr-KZ-d44"/>
+                        <outletCollection property="Tiles" destination="ox2-s1-kMa" collectionClass="NSMutableArray" id="QBK-Of-OVe"/>
+                        <outletCollection property="Tiles" destination="1IE-VG-dL9" collectionClass="NSMutableArray" id="WX3-IV-Wo6"/>
+                        <outletCollection property="Tiles" destination="XF1-FW-MUe" collectionClass="NSMutableArray" id="nlU-fy-g4b"/>
+                        <outletCollection property="Tiles" destination="Usj-O2-E0w" collectionClass="NSMutableArray" id="Lxg-i3-9PS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUt-qW-hwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="118.52678571428571"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

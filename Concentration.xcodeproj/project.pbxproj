@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5F773A251B656800908D71 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F7739251B656800908D71 /* GameViewController.swift */; };
+		8B5F773E251B65B600908D71 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F773D251B65B600908D71 /* Tile.swift */; };
+		8B5F7741251B680000908D71 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F7740251B680000908D71 /* ThemeList.swift */; };
 		8B736C562518D58F00CBEAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736C552518D58F00CBEAC0 /* AppDelegate.swift */; };
 		8B736C582518D58F00CBEAC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736C572518D58F00CBEAC0 /* SceneDelegate.swift */; };
 		8B736C5A2518D58F00CBEAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B736C592518D58F00CBEAC0 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B5F7739251B656800908D71 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8B5F773D251B65B600908D71 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		8B5F7740251B680000908D71 /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		8B736C522518D58F00CBEAC0 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B736C552518D58F00CBEAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B736C572518D58F00CBEAC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B5F773C251B659A00908D71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B5F773D251B65B600908D71 /* Tile.swift */,
+				8B5F7740251B680000908D71 /* ThemeList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8B736C492518D58F00CBEAC0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +71,11 @@
 		8B736C542518D58F00CBEAC0 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				8B5F773C251B659A00908D71 /* Model */,
 				8B736C552518D58F00CBEAC0 /* AppDelegate.swift */,
 				8B736C572518D58F00CBEAC0 /* SceneDelegate.swift */,
 				8B736C592518D58F00CBEAC0 /* ViewController.swift */,
+				8B5F7739251B656800908D71 /* GameViewController.swift */,
 				8B736C5B2518D58F00CBEAC0 /* Main.storyboard */,
 				8B736C5E2518D59200CBEAC0 /* Assets.xcassets */,
 				8B736C602518D59200CBEAC0 /* LaunchScreen.storyboard */,
@@ -94,7 +111,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = AhsanKhalil;
 				TargetAttributes = {
 					8B736C512518D58F00CBEAC0 = {
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5F773A251B656800908D71 /* GameViewController.swift in Sources */,
 				8B736C5A2518D58F00CBEAC0 /* ViewController.swift in Sources */,
+				8B5F773E251B65B600908D71 /* Tile.swift in Sources */,
+				8B5F7741251B680000908D71 /* ThemeList.swift in Sources */,
 				8B736C562518D58F00CBEAC0 /* AppDelegate.swift in Sources */,
 				8B736C582518D58F00CBEAC0 /* SceneDelegate.swift in Sources */,
 			);
@@ -192,6 +212,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +273,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
