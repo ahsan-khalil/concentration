@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B308225251BA3EB00E1862C /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B308224251BA3EB00E1862C /* Concentration.swift */; };
 		8B5F773A251B656800908D71 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F7739251B656800908D71 /* GameViewController.swift */; };
 		8B5F773E251B65B600908D71 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F773D251B65B600908D71 /* Tile.swift */; };
 		8B5F7741251B680000908D71 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F7740251B680000908D71 /* ThemeList.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B308224251BA3EB00E1862C /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		8B5F7739251B656800908D71 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8B5F773D251B65B600908D71 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		8B5F7740251B680000908D71 /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				8B5F773D251B65B600908D71 /* Tile.swift */,
 				8B5F7740251B680000908D71 /* ThemeList.swift */,
+				8B308224251BA3EB00E1862C /* Concentration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B5F773A251B656800908D71 /* GameViewController.swift in Sources */,
+				8B308225251BA3EB00E1862C /* Concentration.swift in Sources */,
 				8B736C5A2518D58F00CBEAC0 /* ViewController.swift in Sources */,
 				8B5F773E251B65B600908D71 /* Tile.swift in Sources */,
 				8B5F7741251B680000908D71 /* ThemeList.swift in Sources */,

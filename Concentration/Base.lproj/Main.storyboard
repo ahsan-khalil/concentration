@@ -95,18 +95,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip : 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-Oe-Aed">
-                                <rect key="frame" x="75" y="144" width="264" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Hi, Ahsan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMP-iX-PuS">
+                                <rect key="frame" x="35" y="56" width="172" height="60"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="9s7-hA-jqr"/>
+                                    <constraint firstAttribute="height" constant="80" id="eYd-jQ-nxp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game Mode: 😀" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1y-Qg-dyI">
+                                <rect key="frame" x="232" y="56" width="157" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Lpw-tb-Huu"/>
+                                    <constraint firstAttribute="width" constant="157" id="Ogk-Cf-srd"/>
+                                    <constraint firstAttribute="height" constant="80" id="g0h-OX-But"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5V-MP-Ssd">
-                                <rect key="frame" x="35" y="335" width="85" height="65"/>
+                                <rect key="frame" x="35" y="353" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -115,7 +127,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-Sp-f2O">
-                                <rect key="frame" x="125" y="335" width="85" height="65"/>
+                                <rect key="frame" x="125" y="353" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -124,7 +136,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cl-ba-51d">
-                                <rect key="frame" x="214" y="335" width="85" height="65"/>
+                                <rect key="frame" x="214" y="353" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -133,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-lC-dC6">
-                                <rect key="frame" x="304" y="335" width="85" height="65"/>
+                                <rect key="frame" x="304" y="353" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -142,7 +154,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL3-cM-MHA">
-                                <rect key="frame" x="36" y="408" width="85" height="65"/>
+                                <rect key="frame" x="36" y="426" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -151,7 +163,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4h-0F-1l4">
-                                <rect key="frame" x="126" y="408" width="85" height="65"/>
+                                <rect key="frame" x="126" y="426" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -160,7 +172,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azI-In-pcP">
-                                <rect key="frame" x="215" y="408" width="85" height="65"/>
+                                <rect key="frame" x="215" y="426" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -169,7 +181,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-oy-1xw">
-                                <rect key="frame" x="305" y="408" width="85" height="65"/>
+                                <rect key="frame" x="305" y="426" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -178,7 +190,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-s1-kMa">
-                                <rect key="frame" x="36" y="481" width="85" height="65"/>
+                                <rect key="frame" x="36" y="499" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -187,7 +199,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IE-VG-dL9">
-                                <rect key="frame" x="126" y="481" width="85" height="65"/>
+                                <rect key="frame" x="126" y="499" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -196,7 +208,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-FW-MUe">
-                                <rect key="frame" x="215" y="481" width="85" height="65"/>
+                                <rect key="frame" x="215" y="499" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -205,7 +217,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-O2-E0w">
-                                <rect key="frame" x="305" y="481" width="85" height="65"/>
+                                <rect key="frame" x="305" y="499" width="85" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -224,20 +236,37 @@
                                     <action selector="onClickEndGame:" destination="jN0-ej-bHu" eventType="touchUpInside" id="Sdb-kH-SaW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip : 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-Oe-Aed">
+                                <rect key="frame" x="75" y="189" width="264" height="80"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9s7-hA-jqr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QMz-ci-UxS"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="QMz-ci-UxS" firstAttribute="trailing" secondItem="J1y-Qg-dyI" secondAttribute="trailing" constant="25" id="1wF-EI-cK4"/>
+                            <constraint firstItem="dMP-iX-PuS" firstAttribute="top" secondItem="QMz-ci-UxS" secondAttribute="top" constant="12" id="2KF-0q-r6x"/>
                             <constraint firstItem="QMz-ci-UxS" firstAttribute="trailing" secondItem="xbF-Oe-Aed" secondAttribute="trailing" constant="75" id="2UN-Lr-bOi"/>
-                            <constraint firstItem="xbF-Oe-Aed" firstAttribute="top" secondItem="QMz-ci-UxS" secondAttribute="top" constant="100" id="Vrb-Bv-idg"/>
+                            <constraint firstItem="dMP-iX-PuS" firstAttribute="leading" secondItem="QMz-ci-UxS" secondAttribute="leading" constant="35" id="HW7-Qi-Acq"/>
+                            <constraint firstItem="J1y-Qg-dyI" firstAttribute="top" secondItem="QMz-ci-UxS" secondAttribute="top" constant="12" id="WPd-er-AcL"/>
                             <constraint firstItem="xbF-Oe-Aed" firstAttribute="leading" secondItem="QMz-ci-UxS" secondAttribute="leading" constant="75" id="YOz-1o-fQR"/>
                             <constraint firstItem="QMz-ci-UxS" firstAttribute="trailing" secondItem="LgZ-JZ-O9w" secondAttribute="trailing" constant="75" id="aa2-f7-dIL"/>
+                            <constraint firstItem="J1y-Qg-dyI" firstAttribute="leading" secondItem="dMP-iX-PuS" secondAttribute="trailing" constant="25" id="oCy-Ej-XhO"/>
                             <constraint firstItem="QMz-ci-UxS" firstAttribute="bottom" secondItem="LgZ-JZ-O9w" secondAttribute="bottom" constant="65" id="tgG-W7-BJ6"/>
                             <constraint firstItem="LgZ-JZ-O9w" firstAttribute="leading" secondItem="QMz-ci-UxS" secondAttribute="leading" constant="75" id="wUe-M8-oPW"/>
+                            <constraint firstItem="xbF-Oe-Aed" firstAttribute="top" secondItem="dMP-iX-PuS" secondAttribute="bottom" constant="53" id="yXX-Jb-QnU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnEndGame" destination="LgZ-JZ-O9w" id="v22-hW-DEQ"/>
+                        <outlet property="labelGameMode" destination="J1y-Qg-dyI" id="PlU-Iy-psG"/>
+                        <outlet property="labelPlayerName" destination="dMP-iX-PuS" id="ERc-En-Cyl"/>
                         <outlet property="lableFlipCount" destination="xbF-Oe-Aed" id="2xS-V9-C7D"/>
                         <outletCollection property="Tiles" destination="d5V-MP-Ssd" collectionClass="NSMutableArray" id="cG8-Nb-tCO"/>
                         <outletCollection property="Tiles" destination="Nkz-Sp-f2O" collectionClass="NSMutableArray" id="AXZ-Ru-IHs"/>

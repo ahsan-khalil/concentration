@@ -35,10 +35,10 @@ struct Theme {
 class ThemeList{
     static var EmojiLists:[Theme] =
         [
-            Theme(Name: "Faces", Emojies: ["😁","😅","😍","😛","🧐","🤨","🤩","🥳","😏","😒","🤓","😜"],themeBackground: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),tileColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)),
+            Theme(Name: "Faces", Emojies: ["😁","😅","😍","😛","🧐","🤨","🤩","🥳","😏","😒","🤓","😜"],themeBackground: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1),tileColor: #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)),
             Theme(Name: "Sports", Emojies: ["⚽️","🏀","🏈","🥎","🎾","🏐","🏉","🎱","🪀","🏓","🏸","🏒"],themeBackground: #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1),tileColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)),
-            Theme(Name: "Flags", Emojies: ["🇵🇰","🇦🇫","🇧🇩","🇦🇺","🇮🇳","🇰🇼","🇸🇦","🇸🇽","🇿🇦","🇦🇪","🇺🇸","🏴󠁧󠁢󠁥󠁮󠁧󠁿"],themeBackground: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1),tileColor: #colorLiteral(red: 0.3098039329, green: 0.2039215714, blue: 0.03921568766, alpha: 1)),
-            Theme(Name: "Animals", Emojies: ["🐥","🐶","🐰","🐹","🐭","🐱","🦊","🐻","🐼","🐨","🐯","🦁"],themeBackground: #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1),tileColor: #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1))
+            Theme(Name: "Flags", Emojies: ["🇵🇰","🇦🇫","🇧🇩","🇦🇺","🇮🇳","🇰🇼","🇸🇦","🇸🇽","🇿🇦","🇦🇪","🇺🇸","🏴󠁧󠁢󠁥󠁮󠁧󠁿"],themeBackground: #colorLiteral(red: 0.3098039329, green: 0.2039215714, blue: 0.03921568766, alpha: 1),tileColor: #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)),
+            Theme(Name: "Animals", Emojies: ["🐥","🐶","🐰","🐹","🐭","🐱","🦊","🐻","🐼","🐨","🐯","🦁"],themeBackground: #colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1),tileColor: #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1))
         ]
     
     
