@@ -101,7 +101,8 @@ class ViewController: UIViewController {
         vc.username = editTextUsername.text
         vc.selectedThemeIndex = self.selectedThemeIndex
         vc.selectedTheme = ThemeList.EmojiLists[selectedThemeIndex]
-        present(vc,animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
+        //present(vc,animated: true)
     }
     
     /*---------------------------*/
@@ -121,6 +122,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return datasource.count
     }
     

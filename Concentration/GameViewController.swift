@@ -85,7 +85,8 @@ class GameViewController: UIViewController {
     }
     */
     @IBAction func onClickEndGame(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+        //dismiss(animated: true, completion: nil)
     }
     
     
@@ -106,8 +107,6 @@ class GameViewController: UIViewController {
             btn1.isHidden = true
             btn2.isHidden = true
         },completion: nil)
-        
-        
     }
     
     @objc func removeTransparentView()
